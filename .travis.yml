@@ -8,11 +8,11 @@ script:
     - docker images mannydesigns/node
 
 before_deploy:
-    -docker login -u jawsie -p Jaw12345678
+    - docker login -u jawsie -p Jaw12345678
 
 deploy:
     provider: script
     script: docker push jawsie/node
     on:
         branch: master
-        
+
