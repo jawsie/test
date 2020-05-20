@@ -4,8 +4,8 @@ services:
     - docker
 
 script:
-    - docker build -t mannydesigns/node .
-    - docker images mannydesigns/node
+    - docker build -t jawsie/node .
+    - docker images jawsie/node
 
 before_deploy:
     - docker login -u jawsie -p Jaw12345678
